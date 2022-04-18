@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <title>Roy Weizman - ex4</title>
+</head>
+
+<body>
+    <header></header>
+    <div class="formStyle">
+        <h1>Let's join the Club!</h1>
+        <form action="http://se.shenkar.ac.il/teach/web1/get_form3.php" method="get">
+            <label>Full Name:
+                <input type="text" pattern="(?=^.{0,40}$)^[a-zA-Z-]+\s[a-zA-Z-]+$" name="fullName" />
+            </label>
+            <br />
+            <label>Password: <input type="password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,99}$" name="pass" />
+
+            </label>
+            <br />
+            <label>eMail: <input type="email" name="mail" />
+            </label>
+            <br />
+            <label>Website: <input type="url" name="website" />
+
+            </label>
+            <br />
+            <label>Phone: <input type="tel" pattern="[0-9]{9,10}" name="phone" />
+                <br />
+                <br />
+            </label>
+            <br />
+            <label>Coffee: <input type="number" name="coffee" />
+                <br />
+                <br />
+            </label>
+            <br />
+            <label>Temperature: <input type="range" name="temper" />
+                <br />
+                <br />
+            </label>
+            <br />
+            <label>Address: <textarea type="range" name="address"></textarea>
+                <br />
+                <br />
+            </label>
+            <br />
+            <label>Interests 1 : diving<input type="checkbox" name="interests[]" value="diving" /></label>
+            <br />
+            <label>Interests 2 : photography<input type="checkbox" name="interests[]" value="photography" /></label>
+            <br />
+            <label>Interests 3 : coding<input type="checkbox" name="interests[]" value="coding" /></label>
+            <br />
+            <label>Interests 4 : annoy-people<input type="checkbox" name="interests[]" value="annoy-people" /></label>
+            <br />
+            <br />
+            <span>Gender:</span><br />
+            <label>Male <input type="radio" name="gender" value="male" /> </label><br />
+            <label>Female <input type="radio" name="gender" value="female" /></label><br />
+            <br />
+            <label>Age:
+                <select name="age">
+                    <option value="21">21</option>
+                    <option value="22" selected>22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+
+                </select></label>
+            <br />
+            <br />
+            <input id="submitButton" type="submit" value="Submit" />
+            <br />
+            <br />
+        </form>
+    </div>
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>
